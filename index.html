@@ -1,0 +1,99 @@
+<!-- Visit https://neumorphism.io/ to generate the code for this easily. also https://uiverse.io/ -->
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./styles.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="neumorphism-1"></div>
+			<div class="neumorphism-2"></div>
+			<div class="neumorphism-3"></div>
+
+			<div class="horizontal-container">
+				<div class="coolstuff">
+					<div class="toggleWrapper">
+						<input type="checkbox" class="dn" id="dn" />
+						<label for="dn" class="toggle">
+							<span class="toggle__handler">
+								<span class="crater crater--1"></span>
+								<span class="crater crater--2"></span>
+								<span class="crater crater--3"></span>
+							</span>
+							<span class="star star--1"></span>
+							<span class="star star--2"></span>
+							<span class="star star--3"></span>
+							<span class="star star--4"></span>
+							<span class="star star--5"></span>
+							<span class="star star--6"></span>
+						</label>
+					</div>
+				</div>
+				<div class="horizontal-container">
+					<button class="btn">Hover Me!</button>
+				</div>
+				<div class="horizontal-container">
+					<button class="c-button c-button--gooey">
+						Hover me
+						<div class="c-button__blobs">
+							<div></div>
+							<div></div>
+							<div></div>
+						</div>
+					</button>
+					<svg
+						style="display: block; height: 0; width: 0"
+						version="1.1"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<defs>
+							<filter id="goo">
+								<feGaussianBlur
+									result="blur"
+									stdDeviation="10"
+									in="SourceGraphic"
+								></feGaussianBlur>
+								<feColorMatrix
+									result="goo"
+									values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+									mode="matrix"
+									in="blur"
+								></feColorMatrix>
+								<feBlend in2="goo" in="SourceGraphic"></feBlend>
+							</filter>
+						</defs>
+					</svg>
+				</div>
+				<div class="horizontal-container">
+					<div class="loader">
+						<svg viewBox="0 0 80 80">
+							<circle id="test" cx="40" cy="40" r="32"></circle>
+						</svg>
+					</div>
+
+					<div class="loader triangle">
+						<svg viewBox="0 0 86 80">
+							<polygon points="43 8 79 72 7 72"></polygon>
+						</svg>
+					</div>
+
+					<div class="loader">
+						<svg viewBox="0 0 80 80">
+							<rect x="8" y="8" width="64" height="64"></rect>
+						</svg>
+					</div>
+				</div>
+				<div class="horizontal-container">
+					<button class="cyberpunk-button">HOVER ME</button>
+				</div>
+				<div class="horizontal-container">
+					<div class="circle-loader"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
